@@ -1,0 +1,8 @@
+@function color($value) {
+    @return map-get($colors, $value);
+  }
+  
+  @function get-obj($value, $array: $font-sizes) {
+    @return map-get($array, $value);
+  }
+  

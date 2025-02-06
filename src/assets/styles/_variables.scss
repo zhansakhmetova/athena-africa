@@ -1,0 +1,73 @@
+@import "~bootstrap/scss/functions";
+@import "functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$colors: map-merge($colors, ());
+
+$theme-colors: $colors;
+$utilities-text-colors: $colors;
+$utilities-bg-colors: $theme-colors;
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$spacer: 1rem;
+
+$enable-negative-margins: true;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+.fs-34 {
+  line-height: 34px;
+}
+
+$font-size-base: 1rem;
+$h2-font-size: $font-size-base * 2.25;
+
+.container {
+  max-width: 100%;
+}
+
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 480px) {
+  .container {
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 690px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    max-width: 844px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1260px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1370px;
+  }
+}

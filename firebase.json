@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "public": "/dist/athena-africa",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }]
+  }
+}
